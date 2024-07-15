@@ -1,0 +1,16 @@
+<ImageSelector>:
+    orientation: 'vertical'
+    spacing: dp(10)
+    padding: dp(10)
+
+    MDTopAppBar:
+        title: "Image Selector"
+        pos_hint: {"top": 1}
+        elevation: 10
+
+    MDRaisedButton:
+        text: "Select Images"
+        size_hint: None, None
+        size: dp(200), dp(50)
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        on_release: app.show_image_selector()
